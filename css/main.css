@@ -1,0 +1,126 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #f4f7fc;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container {
+    width: 90%;
+    max-width: 600px;
+    background: linear-gradient(135deg, #3498db, #2ecc71);
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    color: white;
+}
+
+h1, h2 {
+    margin: 0 0 15px;
+    font-size: 24px;
+    letter-spacing: 1px;
+}
+
+/* Form Styling */
+form {
+    margin-top: 20px;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 500px;
+    text-align: left;
+}
+
+label {
+    font-weight: 600;
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+input[type="number"], input[type="file"], button {
+    width: 92%;
+    padding: 12px;
+    margin-bottom: 12px;
+    border: 2px solid #ddd;
+    border-radius: 6px;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+button {
+    background: #2ecc71;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    border: none;
+}
+
+button:hover {
+    background: #27ae60;
+    transform: scale(1.05);
+}
+
+/* Table Styling */
+.table-container {
+    margin-top: 30px;
+    width: 100%;
+    max-width: 800px;
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.2);
+}
+
+thead {
+    background: linear-gradient(135deg, #007bff, #0056b3);
+    color: white;
+}
+
+th, td {
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+}
+
+tbody tr {
+    background-color: #f9f9f9;
+    transition: background 0.3s ease-in-out;
+}
+
+tbody tr:hover {
+    background-color: #e0f7ff;
+    transform: scale(1.02);
+}
+
+th {
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+td {
+    color: #333;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    table {
+        font-size: 14px;
+    }
+
+    th, td {
+        padding: 10px;
+    }
+}
